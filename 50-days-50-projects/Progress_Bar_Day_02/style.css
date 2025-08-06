@@ -1,0 +1,157 @@
+:root{
+    --primary-color: #4caf50;
+    --secondary-color: #ccc;
+    --text-color: black;
+    --background-color: #f0f0f0;
+}
+
+*{
+   
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: var(--background-color);
+    overflow: hidden;
+    margin: 0;
+}
+
+.parallax-bg {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 120vw;
+      height: 120vh;
+      background-image: url('background.jpg'); /* replace with your background */
+      background-size: cover;
+      background-position: center;
+      z-index: -5;
+      transform: translate(0px, 0px);
+      transition: transform 0.5s ease-out;
+}
+.container{
+    text-align: center;
+    z-index: 2;
+    
+}
+
+.glass-box {
+    padding: 100px;
+    border-radius: 20px;
+    background: rgba(255, 255, 255, 0.1); /* Transparent white */
+    backdrop-filter: blur(3px); /* Blur effect */
+    -webkit-backdrop-filter: blur(3px); /* Safari support */
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+    display: inline-block;
+    margin-top: 20px;
+    border: 2px solid white
+
+}
+
+
+.progress-container{
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    max-width: 100%;
+    width: 350px;
+    margin-bottom: 30px;
+}
+.progress-container::before{
+    content: '';
+    background-color: var(--secondary-color);
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translate(0, -50%);
+    height: 8px;
+    width: 100%;
+    z-index: -1;
+    transition:  0.3s ease;
+}
+#progress{
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translate(0, -50%);
+    height: 8px;
+    width: 0%;
+    z-index: -1;
+    background-image: linear-gradient(to right, rgb(6, 253, 2), rgb(217, 240, 199));
+    transition:  0.3s ease;
+}
+.circle{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: 5px solid var(--secondary-color);
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: black;
+    font-weight: bold;
+    transition: border-color 0.3s ease;
+}
+
+.circle.active {
+    background: white; /* inner background */
+    border: 5px solid transparent;
+    background-image: 
+        linear-gradient(white, white), /* for center fill */
+        linear-gradient(to right, rgb(6, 253, 2), rgb(217, 240, 199)); /* border gradient */
+    background-origin: border-box;
+    background-clip: content-box, border-box;
+}
+.btn{
+    padding: 10px 20px;
+    background-color: var(--primary-color);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+.btn:active{
+    transform: scale(0.95);
+}
+.btn:focus{
+    outline: none;
+}
+.btn:disabled{
+    background-color: var(--secondary-color);
+    cursor: not-allowed;
+}
+.model-container {
+            position: absolute;
+            top: 77%;
+            left: 70%;
+            transform: translate(-50%, -50%);
+            perspective: 1000px;
+            transform-style: preserve-3d;
+            
+
+            width: auto;
+            height: auto;
+            z-index: 1;
+            pointer-events: none;
+}
+
+.model {
+    width: 960px; /* or whatever looks good */
+    height: auto;
+    transition: transform 0.5s ease;
+}
+.greenbox {
+    position: absolute;
+    bottom: 0;
+    
+    width: 100%;
+    height: 40%;
+    background-image: linear-gradient(to top, rgb(0, 0, 0), rgba(217, 240, 199, 0));
+    z-index: 3; /* behind other elements */
+}
