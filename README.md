@@ -8,10 +8,10 @@ Welcome to my challenge of building **50 mini web development projects in 50 day
 
 ## 📁 Project List
 
-| Day | Project Name           | Status          |
-|-----|------------------------|-----------------|
-| 1   | Card Expanding         | ✅Completed     |
-| 2   | Coming Soon...         | 🔄In Progress   |
+| Day | Project Name           | Status         |
+|-----|------------------------|----------------|
+| 1   | Card Expanding         | ✅ Completed   |
+| 2   | Progress Bar           | ✅ Completed   |
 
 > I will update this list as I progress through the 50 days.
 
