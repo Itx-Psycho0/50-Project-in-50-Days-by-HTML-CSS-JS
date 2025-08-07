@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up Form</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    
+    <div class="container">
+        <spline-viewer class="background" url="https://prod.spline.design/c4-ACfOJKu1kPzyl/scene.splinecode"></spline-viewer>
+        <div class="overlay"></div>
+
+        <div class="form-wrapper">
+            <div class="banner">
+                
+                <h1>Hey, Friend!</h1>
+                <p>Fill up personal information and start journey with us</p>
+            </div>
+            <div class="green-bg">
+                <spline-viewer url="https://prod.spline.design/hyJcUEPxf5i19pwG/scene.splinecode"></spline-viewer>
+                <button type="button">Sign Up</button>
+            </div>
+            <form  class="signup-form">
+                <h1>Create Your Existance</h1>
+                <div class="social-media">
+                    <i class="fab fa-facebook-f"></i>
+                    <i class="fab fa-instagram"></i>
+                    <i class="fab fa-x"></i>
+                    <i class="fab fa-linkedin"></i>
+                </div>
+                <p>or use your email for registration</p>
+                <div class="input-group">
+                    <i class="fas fa-user"></i>
+                    <input type="text" id="name" placeholder="Enter your name" required>
+                </div>
+                <div class="input-group">
+                    <i class="fas fa-envelope"></i>
+                    <input type="email" id="email" placeholder="Enter your email" required>
+                </div>
+                <div class="input-group">
+                    <i class="fas fa-lock"></i>
+                    <input type="password" id="password" placeholder="Enter your password" required>
+                </div>
+                <div class="input-group">
+                    <i class="fas fa-lock"></i>
+                    <input type="password" id="confirm-password" placeholder="Confirm your password" required>
+                </div>
+
+                    <button type="submit">Sign Up</button>
+
+            </form>
+        </div>
+    </div>
+    <script type="module" src="https://unpkg.com/@splinetool/viewer@1.10.42/build/spline-viewer.js"></script>
+    <script type="module" src="https://unpkg.com/@splinetool/viewer@1.10.42/build/spline-viewer.js"></script>
+
+    
+
+
+    <script src="script.js"></script>
+</body>
+</html>

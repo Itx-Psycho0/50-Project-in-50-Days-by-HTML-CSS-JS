@@ -1,0 +1,218 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+}
+
+
+.container{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -2;
+    scale: 1.1;
+    transition: left 1.8s cubic-bezier(0.19, 1, 0.22, 1);
+}
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.733);
+    z-index: -1;
+    pointer-events: none;
+}
+.form-wrapper {
+    background : linear-gradient(to right, #20202010 , #000);
+    border-radius: 2rem;
+    box-shadow: 0 0 4px 4px rgba(48, 48, 48, 0.731);
+    padding: 2rem;
+    width: 60rem;
+    height: 40rem;
+    position: relative;
+    overflow: hidden;
+}
+.green-bg {
+    
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    border-radius: 2rem;
+    text-align: center;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    transition: width 1.8s cubic-bezier(0.19, 1, 0.22, 1);
+}
+.container.active .green-bg {
+    width: 40%;   
+}
+.banner {
+    position: absolute;
+    top: 51%;
+    left: -20%;
+    transform: translateX(-50%);
+    color: #ffffff;
+    z-index: 2;
+    text-align: center;
+    width: 20rem;
+    font-size: 0.5rem;  
+    transition: left 1.8s cubic-bezier(0.19, 1, 0.22, 1);  
+}
+.container.active .banner {
+    left: 21%;
+}
+.banner h1 {
+    font-size: 2.5rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+    color: #ffffff;
+    text-shadow: 1px 0 10px rgba(0, 0, 0, 0.838);
+}
+.banner p {
+    font-size: 1.2rem;
+    font-weight: 400;
+    margin-bottom: 1.5rem;
+    text-shadow: 1px 0 10px rgba(0, 0, 0, 0.838);
+    
+}
+spline-viewer {
+    position: absolute;
+    top: 0;
+    left: -3%;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    scale: 1.1;
+}
+.green-bg button{
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #ffffff;
+    border: none;
+    color: #000;
+    font-size: 13px ;
+    font-weight: 600;
+    text-transform: uppercase;
+    cursor: pointer;
+    padding: 1rem 2rem;
+    border-radius: 10px;
+    box-shadow: 0 0 2px 2px rgba(48, 48, 48, 0.731);
+    transition: background 0.3s ease;
+}
+.green-bg button:hover{
+    background: rgba(255, 255, 255, 0.2);
+}
+.signup-form {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 50%;
+    height: 100%;
+    padding: 6rem  2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 0;
+    transition: left 1.5s cubic-bezier(0.19, 1, 0.22, 1);
+}
+.container.active .signup-form {
+    left: 45%;
+}
+.signup-form h1 {
+    font-size: 2rem;
+    font-weight: 600;
+    margin-bottom: 2rem;
+    color: #ffffff;
+}
+.signup-form p {
+    font-size: 1rem;
+    font-weight: 400;
+    margin-bottom: 1.5rem;
+    color: #ffffff;
+}
+.social-media {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 1.5rem;
+    color: #ffffff;
+}
+.social-media i {
+    
+    margin: 0 5px;
+    height: 30px;
+    width: 30px;
+    line-height: 30px;
+    text-align: center;
+    border: 2px solid #000;
+    border-radius: 50%;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+.social-media i:hover {
+    color: #06f;
+}
+.social-media .fab.fa-instagram:hover {
+    color: #e1306c;
+}
+.social-media .fab.fa-x:hover {
+    color: #3d3c3c;
+}
+.input-group {
+    position: relative;
+}
+.input-group input{
+    width: 100%;
+    padding:10px 50px;
+    
+    border-radius: 3px;
+    font-size: 1rem;
+    font-weight: 400;
+    /* margin: 0 1.5rem 1.5rem 1.5rem; */
+    margin-bottom: 1rem;
+    border: none;
+    background-color: #f0f0f0;
+}
+.input-group i {
+    position: absolute;
+    left: 1rem;
+    top: 37%;
+    transform: translateY(-50%);
+
+    color: #000;
+}
+.signup-form button {
+    width: 25%;
+    padding: 10px;
+    background-color: rgb(22, 220, 151);
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+    font-size: 1rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+.signup-form button:hover {
+    background-color: #06f;
+}
