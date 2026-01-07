@@ -13,7 +13,7 @@ Welcome to my challenge of building **50 mini web development projects in 50 day
 | 1   | Card Expanding         |    Completed   |
 | 2   | Progress Bar           |    Completed   |
 | 3   | Sign-Up Form           |    completed   |
-| 4   | Coming Soon...         |    progress.   |
+| 4   | Product Card           |    completed   |
 
 > I will update this list as I progress through the 50 days.
 
